@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="movie-gateway" />
+        <module name="movie-config" />
+        <module name="movie-eureka" />
+        <module name="movie-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="movie-config" target="1.8" />
+      <module name="movie-eureka" target="1.8" />
+      <module name="movie-gateway" target="1.8" />
+      <module name="movie-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="movie-config" options="-parameters" />
+      <module name="movie-eureka" options="-parameters" />
+      <module name="movie-gateway" options="-parameters" />
+      <module name="movie-web" options="-parameters" />
+    </option>
+  </component>
+</project>

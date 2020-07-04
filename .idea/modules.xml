@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ShareMovie.iml" filepath="$PROJECT_DIR$/ShareMovie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie-config/movie-config.iml" filepath="$PROJECT_DIR$/movie-config/movie-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie-eureka/movie-eureka.iml" filepath="$PROJECT_DIR$/movie-eureka/movie-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie-gateway/movie-gateway.iml" filepath="$PROJECT_DIR$/movie-gateway/movie-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie-web/movie-web.iml" filepath="$PROJECT_DIR$/movie-web/movie-web.iml" />
+    </modules>
+  </component>
+</project>
