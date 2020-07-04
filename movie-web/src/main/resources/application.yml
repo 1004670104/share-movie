@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8002
 eureka:
   instance:
     prefer-ip-address: true
@@ -12,9 +12,9 @@ spring:
   application:
      name: movie-web
   datasource:
-    url: jdbc:mysql://111.230.143.26:3306/share_movie
-    username: root
-    password: tecent123456
+    url:
+    username:
+    password:
     driver-class-name: com.mysql.jdbc.Driver
 
 mybatis:

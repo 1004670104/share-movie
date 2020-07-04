@@ -1,0 +1,23 @@
+server:
+  port: 8001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+spring:
+  application:
+    name: movie-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/1004670104/share-movie.git
+          username:
+          password:
+          default-label: master
+          search-paths: config
