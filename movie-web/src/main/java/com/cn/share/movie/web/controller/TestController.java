@@ -2,6 +2,7 @@ package com.cn.share.movie.web.controller;
 
 import com.cn.share.movie.web.dao.Test;
 import com.cn.share.movie.web.service.TestService;
+import com.cn.share.movie.web.util.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,9 @@ public class TestController {
     @Autowired
     private TestService testService;
 
+    @Autowired
+    private RedisUtils redisUtils;
+
     @RequestMapping("/test")
     public String testInsert(int i){
         Test test = new Test();
@@ -24,6 +28,12 @@ public class TestController {
         String b = "B";
         a.equals(b);
         return String.valueOf(insert);
+    }
+
+    @RequestMapping("/redis")
+    public String redis(){
+        redisUtils.setValue("A", "A");
+        return redisUtils.getValue("A");
     }
 
     private static boolean equals(String a, String b){

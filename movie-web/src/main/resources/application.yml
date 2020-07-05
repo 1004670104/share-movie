@@ -12,10 +12,14 @@ spring:
   application:
      name: movie-web
   datasource:
-    url:
-    username:
-    password:
+    url: jdbc:mysql://127.0.0.1:3306/share_movie
+    username: root
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 3000
 
 mybatis:
   type-aliases-package: com.cn.share.movie.web.dao
