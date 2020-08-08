@@ -1,4 +1,4 @@
-package com.cn.share.movie.web.util;
+package com.cn.share.movie.web.designPattern.singleTon;
 
 public class LazySingleTon {
 
